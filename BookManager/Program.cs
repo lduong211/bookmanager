@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BookManager.App;
 
 namespace BookManager
 {
@@ -10,7 +11,8 @@ namespace BookManager
     {
         static void Main(string[] args)
         {
-            //cc
+            AppBookManager app = new AppBookManager();
+            app.run();
         }
     }
 }
