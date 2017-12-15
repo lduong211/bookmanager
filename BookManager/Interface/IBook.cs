@@ -18,7 +18,7 @@ namespace BookManager.Entities
 
         string ISBN { get; set; }
 
-        string Year { get; set; }
+        string year { get; set; }
     }
     
 }
