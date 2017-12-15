@@ -34,7 +34,7 @@ namespace BookManager.Entities
 
         public string year { get; set; }
         //input info
-        void input()
+        public void input()
         {
             Console.WriteLine("Title:");
             Title=Console.ReadLine();
@@ -62,7 +62,7 @@ namespace BookManager.Entities
             } while (str.Length > 0);
         }
         //show info
-        void show()
+        public void show()
         {
             Console.WriteLine("Title:");
             Console.WriteLine("Author:");

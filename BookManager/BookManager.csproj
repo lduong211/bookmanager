@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\AppBookManager.cs" />
     <Compile Include="App\BookList.cs" />
     <Compile Include="Entities\Book.cs" />
     <Compile Include="Interface\IBook.cs" />

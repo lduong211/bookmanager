@@ -11,10 +11,25 @@ namespace BookManager.App
     class BookList
     {
         private ArrayList books = new ArrayList();
-        
-        void input()
+        private Book newbook;
+
+        public void input(int amount)
         {
-            Console.WriteLine("Nhap so luong sach:");
+            for(int i=0 ; i < amount ;i++)
+            {
+                newbook = new Book();
+                newbook.input();
+                books.Add(newbook);
+            }
         }
+
+        public void output()
+        {
+            foreach (Book book in books)
+            {
+                Console.WriteLine("---------");
+                book.show();
+            }
+         }
     }
 }
